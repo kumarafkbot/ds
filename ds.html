@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Locked Website</title>
+    <script>
+        function checkPasscode() {
+            var passcode = document.getElementById("passcode").value;
+            if (passcode === "6969") {
+                window.location.href = "https://discord.com/app";
+            } else {
+                alert("Incorrect passcode. Please try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Locked Website</h1>
+    <p>Please enter the passcode to access the website:</p>
+    <input type="password" id="passcode">
+    <button onclick="checkPasscode()">Submit</button>
+</body>
+</html>
